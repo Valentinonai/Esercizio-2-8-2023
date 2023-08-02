@@ -1,0 +1,39 @@
+$padding: (
+  sm: 10px,
+  normal: 20px,
+  md: 30px,
+  lg: 40px,
+  xl: 50px,
+  xxl: 60px,
+);
+
+$margin: (
+  sm: 10px,
+  normal: 20px,
+  md: 30px,
+  lg: 40px,
+  xl: 50px,
+  xxl: 60px,
+);
+
+@each $key, $value in $padding {
+  .padding-inline-#{$key} {
+    padding-inline: $value;
+  }
+}
+@each $key, $value in $padding {
+  .padding-block-#{$key} {
+    padding-block: $value;
+  }
+}
+
+@each $key, $value in $margin {
+  .margin-inline-#{$key} {
+    margin-inline: $value;
+  }
+}
+@each $key, $value in $margin {
+  .margin-block-#{$key} {
+    margin-block: $value;
+  }
+}

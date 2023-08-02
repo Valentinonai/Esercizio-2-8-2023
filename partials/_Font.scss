@@ -1,0 +1,6 @@
+$font: "Times New Roman", Times, serif;
+
+@mixin title-big($size, $color) {
+  font-size: $size;
+  color: $color;
+}

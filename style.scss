@@ -1,0 +1,116 @@
+@import "./partials/Colori";
+@import "./partials/Reset";
+@import "./partials/Spaziature";
+@import "./partials/Font";
+@import "./partials/Bottoni";
+@import "./partials/Mixins";
+@import "./partials/Animazioni";
+
+nav {
+  height: 80px;
+  background-color: $Bg-nav;
+  padding-left: map-get($padding, "md");
+  display: flex;
+  align-items: center;
+  color: black;
+
+  div {
+    display: inline-block;
+    img {
+      display: block;
+      width: 50px;
+    }
+  }
+  ul {
+    display: inline-block;
+    li {
+      display: inline-block;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.hero {
+  margin-block: 30px;
+  margin-inline: 100px;
+  border: 1px solid $Border;
+  box-shadow: 0 0 3px $Border;
+  display: flex;
+  background-color: $Bg-headline;
+  .heroImg {
+    overflow: hidden;
+    @include floating($border: 4px solid white);
+    width: 40%;
+    animation: fadeIn 4s linear forwards;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  .headline {
+    padding-inline: 20px;
+    width: 60%;
+    animation: fadeIn 4s linear forwards;
+    h1 {
+      position: relative;
+      @include title-big(10em, $Testo);
+    }
+    p {
+      font-size: 1.4em;
+    }
+    .btn {
+      text-align: center;
+
+      button {
+        width: 200px;
+        height: 80px;
+        color: inherit;
+        margin-top: map-get($margin, "xl");
+        margin-inline: map-get($margin, "normal");
+        cursor: pointer;
+      }
+    }
+  }
+}
+.imgBlock {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
+  .imgWrap {
+    width: 40%;
+    margin: 20px;
+    vertical-align: middle;
+    border: 1px solid $Border;
+    box-shadow: 0 0 10px $Border;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.bodyImg {
+  overflow: hidden;
+  @include floating(20px, 0 0 5px 5px gray, none);
+  width: 80%;
+  margin-block: 20px;
+  margin-inline: auto;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gridItem {
+  @include grid($parametriFlex-linea);
+  background-color: red;
+}

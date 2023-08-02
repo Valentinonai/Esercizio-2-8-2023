@@ -1,0 +1,10 @@
+@mixin floating($radius: 20px, $shadow: 5px 5px 10px 10px black, $border: 2px solid black) {
+  border-radius: $radius;
+  box-shadow: $shadow;
+  border: $border;
+}
+$parametriFlex-linea: 4;
+$viewport: 100%;
+@mixin grid($parametri) {
+  width: $viewport / $parametri;
+}
