@@ -3,8 +3,7 @@
   box-shadow: $shadow;
   border: $border;
 }
-$parametriFlex-linea: 4;
-$viewport: 100%;
-@mixin grid($parametri) {
-  width: calc($viewport / $parametri);
+
+@mixin grid($nCols, $viewport: 100%) {
+  width: calc($viewport / $nCols);
 }

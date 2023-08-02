@@ -4,9 +4,11 @@
   @keyframes #{$nome} {
     0% {
       opacity: 0;
+      top: -$start;
     }
     100% {
-      opacity: 100%;
+      top: $end;
+      opacity: 1;
     }
   }
 }
