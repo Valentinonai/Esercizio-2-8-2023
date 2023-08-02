@@ -6,5 +6,5 @@
 $parametriFlex-linea: 4;
 $viewport: 100%;
 @mixin grid($parametri) {
-  width: $viewport / $parametri;
+  width: calc($viewport / $parametri);
 }

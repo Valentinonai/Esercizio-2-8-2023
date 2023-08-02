@@ -162,7 +162,6 @@ nav ul li {
   animation: fadeIn 4s linear forwards;
 }
 .hero .headline h1 {
-  position: relative;
   font-size: 10em;
   color: #f4f4f4;
 }

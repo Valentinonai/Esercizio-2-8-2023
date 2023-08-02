@@ -53,8 +53,8 @@ nav {
     width: 60%;
     animation: fadeIn 4s linear forwards;
     h1 {
-      position: relative;
       @include title-big(10em, $Testo);
+      // @include animazione(2s, 200px, 0, 0, anim);
     }
     p {
       font-size: 1.4em;

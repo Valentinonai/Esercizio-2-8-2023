@@ -1,12 +1,11 @@
 @mixin animazione($durata, $start, $end, $delay, $nome) {
-  animation: $nome $durata linear $delay;
+  animation: $nome $durata linear $delay forwards;
+
   @keyframes #{$nome} {
     0% {
-      top: $start;
       opacity: 0;
     }
     100% {
-      top: $end;
       opacity: 100%;
     }
   }
